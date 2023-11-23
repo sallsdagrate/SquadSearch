@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateFixture">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/purple_700"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="@string/create_fixture"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/createFixtureBackBtn"
+                tools:layout_editor_absoluteY="2dp" />
+
+            <Button
+                android:id="@+id/createFixtureBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/back"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/createFixtureFormationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:ems="10"
+        android:hint="@string/example_formation"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView35"
+        app:layout_constraintStart_toEndOf="@+id/textView35" />
+
+    <EditText
+        android:id="@+id/createFixtureLocationText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+        android:hint="@string/example_address"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/formation"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createFixturePitchText" />
+
+    <EditText
+        android:id="@+id/createFixtureOpponentText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+        android:hint="@string/example_team"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="320dp"
+        android:text="@string/pitch_type"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView26"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="103dp"
+        android:text="@string/opponent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/createFixtureBackBtn" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/location"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createFixtureOpponentText" />
+
+    <EditText
+        android:id="@+id/createFixturePitchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:ems="10"
+        android:hint="@string/example_pitch_type"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView27"
+        app:layout_constraintStart_toEndOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginBottom="29dp"
+        android:text="@string/time"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/createFixturePitchText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/createFixtureTimeText"
+        app:layout_constraintEnd_toStartOf="@+id/createFixtureTimeText" />
+
+    <EditText
+        android:id="@+id/createFixtureDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:ems="10"
+        android:hint="@string/example_date"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView24"
+        app:layout_constraintStart_toEndOf="@+id/textView24" />
+
+    <EditText
+        android:id="@+id/createFixtureTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:ems="10"
+        android:hint="@string/example_time"
+        android:inputType="time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView26"
+        app:layout_constraintStart_toEndOf="@+id/textView26" />
+
+    <Button
+        android:id="@+id/createFixtureCreateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="29dp"
+        android:text="@string/create_new_fixture"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/createFixtureFormationText"
+        app:layout_constraintTop_toBottomOf="@+id/createFixtureFormationText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

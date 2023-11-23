@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateFixture">
+
+    <Button
+        android:id="@+id/enterResultBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/enter_result"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toEndOf="@+id/enterResultBackBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enterResultTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="103dp"
+        android:text="@string/team"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@id/enterResultBackBtn"
+        app:layout_constraintTop_toBottomOf="@+id/enterResultBackBtn" />
+
+    <EditText
+        android:id="@+id/enterResultInputTeamScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="39dp"
+        android:ems="2"
+        android:hint="@string/example_score"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/enterResultOpponent"
+        app:layout_constraintBottom_toBottomOf="@+id/enterResultTeam" />
+
+    <TextView
+        android:id="@+id/enterResultOpponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/opponent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/enterResultTeam"
+        app:layout_constraintTop_toTopOf="@+id/enterResultTeam" />
+
+    <EditText
+        android:id="@+id/enterResultInputOpponentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="39dp"
+        android:ems="2"
+        android:hint="@string/example_score"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/enterResultOpponent"
+        app:layout_constraintBottom_toBottomOf="@+id/enterResultOpponent" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterResultOpponent">
+
+        <Button
+            android:id="@+id/enterResultCreateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:text="@string/save_result" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/goalScorer"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/enterResultOpponent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/goalNumber"
+        android:layout_width="56dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/goalScorer"
+        app:layout_constraintTop_toBottomOf="@+id/enterResultOpponent" />
+
+    <Button
+        android:id="@+id/enterScorer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="Add"
+        app:layout_constraintStart_toEndOf="@+id/goalNumber"
+        app:layout_constraintTop_toBottomOf="@+id/enterResultOpponent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Enter Goal Scorer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/enterResultOpponent"
+        tools:layout_editor_absoluteX="13dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectPosition">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#00FFFFFF"
+        android:rotation="90"
+        android:src="@drawable/football_pitch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        tools:src="@drawable/football_pitch"
+        tools:srcCompat="@drawable/football_pitch" />
+
+    <Button
+        android:id="@+id/savePositionsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="@string/save"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="@string/select_your_positions"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectPositionsBackBtn" />
+
+    <Switch
+        android:id="@+id/switchRW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="RW"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/switchCM"
+        app:layout_constraintStart_toEndOf="@+id/switchCM" />
+
+    <Switch
+        android:id="@+id/switchCM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="CM"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/switchRM"
+        app:layout_constraintEnd_toStartOf="@+id/switchRM" />
+
+    <Switch
+        android:id="@+id/switchRB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="RB"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/switchCB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchCB" />
+
+    <Switch
+        android:id="@+id/switchLW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="34dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="LW"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/switchST"
+        app:layout_constraintTop_toBottomOf="@+id/switchST" />
+
+    <Switch
+        android:id="@+id/switchCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="31dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="CB"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/switchRB"
+        app:layout_constraintTop_toBottomOf="@+id/switchRM" />
+
+    <Switch
+        android:id="@+id/switchGK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="GK"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/switchRB" />
+
+    <Switch
+        android:id="@+id/switchST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="ST"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/switchRW"
+        app:layout_constraintEnd_toStartOf="@+id/switchRW" />
+
+    <Switch
+        android:id="@+id/switchLB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="LB"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/switchCB"
+        app:layout_constraintEnd_toStartOf="@+id/switchCB"
+        app:layout_constraintTop_toBottomOf="@+id/switchCB" />
+
+    <Switch
+        android:id="@+id/switchRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="205dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="RM"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Switch
+        android:id="@+id/switchLM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="LM"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/switchCM"
+        app:layout_constraintTop_toTopOf="@+id/switchCM" />
+
+    <Button
+        android:id="@+id/selectPositionsBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:text="@string/back"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

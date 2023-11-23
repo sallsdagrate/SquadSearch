@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "719393550922",
+    "project_id": "drpfiftytwo",
+    "storage_bucket": "drpfiftytwo.appspot.com"
+  },
+
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719393550922:android:a736fcb897f7d3c51bacb3",
+        "android_client_info": {
+          "package_name": "com.drp52"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxzYcgLJRJEL-qPOUc8oy3roSR_Oeodq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

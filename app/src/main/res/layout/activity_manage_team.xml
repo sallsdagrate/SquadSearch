@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageTeam">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/purple_700"
+        app:cardCornerRadius="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/manageTeamTeamNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/team_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/manageTeamBackBtn" />
+
+            <Button
+                android:id="@+id/manageTeamBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                app:cornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:text="@string/manage_team"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/manageTeamBackBtn"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/manageTeamMakeFixtureBtn"
+        android:layout_width="351dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/make_fixture"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_fixtures_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <Button
+        android:id="@+id/manageTeamMakeTeamAnnouncementBtn"
+        android:layout_width="351dp"
+        android:layout_height="100dp"
+        android:autoText="false"
+        android:text="@string/make_team_announcement"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_notifications_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manageTeamMakeFixtureBtn" />
+
+    <Button
+        android:id="@+id/manageTeamRequests"
+        android:layout_width="351dp"
+        android:layout_height="100dp"
+        android:autoText="false"
+        android:text="Player Requests"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:icon="@android:drawable/ic_dialog_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manageTeamMakeTeamAnnouncementBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

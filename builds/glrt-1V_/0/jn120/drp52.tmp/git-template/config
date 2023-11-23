@@ -1,0 +1,4 @@
+[fetch]
+	recurseSubmodules = false
+[http "https://gitlab.doc.ic.ac.uk"]
+	sslCAInfo = /home/johns/drp/drp52/builds/glrt-1V_/0/jn120/drp52.tmp/CI_SERVER_TLS_CA_FILE
